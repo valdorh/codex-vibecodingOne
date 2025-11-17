@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Торговая компания "Промизоляция"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__content">
+      <div class="topbar__location">Официальный представитель ЗАО "Промизоляция"</div>
+      <div class="topbar__contacts">
+        <a href="tel:+74956465846">+7 (495) 646-58-46</a>
+        <a href="mailto:info@trubizol.ru">info@trubizol.ru</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav__content">
+      <div class="brand">
+        <div class="brand__logo">ПРОМ<span>ИЗОЛЯЦИЯ</span></div>
+        <div class="brand__tagline">Торговая компания</div>
+      </div>
+      <button class="nav__toggle" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#services">Каталог</a></li>
+        <li><a href="#about">Компания</a></li>
+        <li><a href="#projects">Объекты</a></li>
+        <li><a href="#calc">Калькулятор</a></li>
+        <li><a href="#cert">Документация</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="button button--ghost" href="#calc">Рассчитать</a>
+        <a class="button" href="mailto:info@trubizol.ru">Связаться</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">Комплексные решения для трубопроводов</p>
+          <h1>Современная теплоизоляция для инженерных сетей</h1>
+          <p class="lede">
+            Поставляем и сопровождаем предизолированные трубы и фасонные изделия.
+            Помогаем с расчётом проекта, подбором материалов и оперативной доставкой по всей России.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#services">Посмотреть каталог</a>
+            <a class="button button--ghost" href="tel:+74956465846">Позвонить</a>
+          </div>
+          <div class="hero__badges">
+            <div class="badge">Опыт 15+ лет</div>
+            <div class="badge">Сертифицированные материалы</div>
+            <div class="badge">Логистика по РФ</div>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="hero__card-title">Быстрый запрос</div>
+          <form class="hero__form">
+            <label>
+              <span>Что требуется?</span>
+              <input type="text" name="request" placeholder="Предизолированные трубы, фасонные части..." required />
+            </label>
+            <label>
+              <span>Город и сроки</span>
+              <input type="text" name="city" placeholder="Например: Москва, 2 недели" />
+            </label>
+            <label>
+              <span>Контакты</span>
+              <input type="tel" name="phone" placeholder="Телефон или email" required />
+            </label>
+            <button type="submit" class="button button--full">Получить консультацию</button>
+            <p class="hero__hint">Ответим в течение рабочего дня. Мы ценим конфиденциальность.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links" id="services">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Каталог</p>
+          <h2>Основные направления</h2>
+        </div>
+        <a class="link" href="#calc">Онлайн-калькулятор</a>
+      </div>
+      <div class="container quick-links__grid">
+        <article class="card">
+          <div class="card__icon">🔥</div>
+          <div>
+            <h3>Предизолированные трубы</h3>
+            <p>Трубы ППУ, СПИРО, НПИ и комплектующие для надежных теплотрасс.</p>
+          </div>
+          <a class="card__link" href="#calc">Рассчитать поставку</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">⚙️</div>
+          <div>
+            <h3>Фасонные изделия</h3>
+            <p>Отводы, тройники, переходы, компенсаторы и элементы управления.</p>
+          </div>
+          <a class="card__link" href="#projects">Увидеть в проектах</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">🚚</div>
+          <div>
+            <h3>Логистика и сопровождение</h3>
+            <p>Планирование поставок, контроль качества, сопровождение монтажа.</p>
+          </div>
+          <a class="card__link" href="#contacts">Запросить детали</a>
+        </article>
+        <article class="card">
+          <div class="card__icon">📑</div>
+          <div>
+            <h3>Сертификация</h3>
+            <p>Полный комплект паспортов, протоколов и технической документации.</p>
+          </div>
+          <a class="card__link" href="#cert">Смотреть документы</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div>
+          <p class="eyebrow">О компании</p>
+          <h2>Работаем с промышленными объектами и ЖКХ</h2>
+          <p>
+            ТК "Промизоляция" обеспечивает устойчивые поставки теплоизоляционных материалов
+            для энергетики, нефтегаза и коммунальных проектов. Мы помогаем подобрать решение
+            под конкретные условия эксплуатации и предоставляем экспертную поддержку на всех этапах.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__value">1000+</div>
+              <div class="stat__label">позиции на складе</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">24/7</div>
+              <div class="stat__label">консультации инженеров</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">40+</div>
+              <div class="stat__label">регионов поставки</div>
+            </div>
+          </div>
+        </div>
+        <div class="about__panel">
+          <div class="panel__item">
+            <div>
+              <h3>Проектные расчёты</h3>
+              <p>Сравним варианты и предложим оптимальный состав поставки под ваш бюджет.</p>
+            </div>
+            <span class="pill">Экономия до 15%</span>
+          </div>
+          <div class="panel__item">
+            <div>
+              <h3>Гарантии качества</h3>
+              <p>Все изделия проходят заводской контроль и соответствуют ГОСТ.</p>
+            </div>
+            <span class="pill">ГОСТ / ISO</span>
+          </div>
+          <div class="panel__item">
+            <div>
+              <h3>Сервис и обучение</h3>
+              <p>Помогаем с монтажом, обучаем команды и делимся инструкциями.</p>
+            </div>
+            <span class="pill">Поддержка</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Объекты</p>
+          <h2>Реализуем проекты разного масштаба</h2>
+        </div>
+        <div class="pill pill--soft">ТЭЦ • ЖКХ • Промышленность</div>
+      </div>
+      <div class="container projects__grid">
+        <article class="project">
+          <div class="project__body">
+            <h3>Теплотрасса для жилого комплекса</h3>
+            <p>Предизолированные трубы с системой оперативного дистанционного контроля (ОДК).</p>
+          </div>
+          <div class="project__meta">Москва • 4 км • 2023</div>
+        </article>
+        <article class="project">
+          <div class="project__body">
+            <h3>Модернизация котельной</h3>
+            <p>Поставки фасонных частей и узлов управления для повышения эффективности.</p>
+          </div>
+          <div class="project__meta">Екатеринбург • 2022</div>
+        </article>
+        <article class="project">
+          <div class="project__body">
+            <h3>Инфраструктура для промпредприятия</h3>
+            <p>Комплексные поставки с контролем качества на каждом этапе логистики.</p>
+          </div>
+          <div class="project__meta">Тюмень • 2021</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="calc">
+      <div class="container cta__content">
+        <div>
+          <p class="eyebrow">Калькулятор</p>
+          <h2>Получите смету за 10 минут</h2>
+          <p>Отправьте исходные данные и получите расчёт стоимости с готовым списком материалов.</p>
+        </div>
+        <div class="cta__actions">
+          <a class="button" href="mailto:info@trubizol.ru">Отправить данные</a>
+          <a class="button button--ghost" href="tel:+74956465846">Связаться с инженером</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cert" id="cert">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Документация</p>
+          <h2>Сертификаты и паспорта качества</h2>
+        </div>
+        <a class="link" href="#contacts">Запросить полный пакет</a>
+      </div>
+      <div class="container cert__grid">
+        <article class="document">
+          <div class="document__type">Сертификат соответствия</div>
+          <p>Подтверждает соответствие труб и фасонных изделий требованиям ГОСТ.</p>
+          <a class="card__link" href="#">Скачать PDF</a>
+        </article>
+        <article class="document">
+          <div class="document__type">Протокол испытаний</div>
+          <p>Результаты заводских испытаний по теплоизоляции и герметичности.</p>
+          <a class="card__link" href="#">Скачать PDF</a>
+        </article>
+        <article class="document">
+          <div class="document__type">Паспорт изделия</div>
+          <p>Полная техническая информация и руководство по эксплуатации.</p>
+          <a class="card__link" href="#">Скачать PDF</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="container contact__grid">
+        <div>
+          <p class="eyebrow">Контакты</p>
+          <h2>Свяжитесь с нами</h2>
+          <p>Мы ответим на технические вопросы, подберём решения и подготовим предложение.</p>
+          <div class="contact__list">
+            <div class="contact__item">
+              <div class="contact__label">Телефон</div>
+              <a href="tel:+74956465846">+7 (495) 646-58-46</a>
+            </div>
+            <div class="contact__item">
+              <div class="contact__label">Email</div>
+              <a href="mailto:info@trubizol.ru">info@trubizol.ru</a>
+            </div>
+            <div class="contact__item">
+              <div class="contact__label">Адрес</div>
+              <p>г. Москва, Проектируемый проезд, дом 17а, оф. 212</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__card">
+          <h3>Оставить заявку</h3>
+          <form class="contact__form">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text" name="name" placeholder="Имя" required />
+            </label>
+            <label>
+              <span>Компания</span>
+              <input type="text" name="company" placeholder="Название компании" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="example@mail.ru" required />
+            </label>
+            <label>
+              <span>Комментарий</span>
+              <textarea name="message" rows="3" placeholder="Коротко опишите задачу"></textarea>
+            </label>
+            <button type="submit" class="button button--full">Отправить</button>
+            <p class="contact__hint">Нажимая на кнопку, вы принимаете условия обработки персональных данных.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <div>
+        <div class="brand__logo">ПРОМ<span>ИЗОЛЯЦИЯ</span></div>
+        <p class="footer__text">Теплоизоляционные решения для надежных инженерных сетей.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#services">Каталог</a>
+        <a href="#about">Компания</a>
+        <a href="#projects">Объекты</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+74956465846">+7 (495) 646-58-46</a>
+        <a href="mailto:info@trubizol.ru">info@trubizol.ru</a>
+        <p>© 2024 ТК "Промизоляция"</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
